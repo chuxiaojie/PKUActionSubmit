@@ -2,7 +2,7 @@ name: PKUAutoSubmit
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 4 * * 3,4,5'
     
   workflow_dispatch:
 
@@ -23,7 +23,6 @@ jobs:
       - name: 'Install requirements'
         run: 
           pip install selenium
-          pip install webdriver_manager
         
       - name: 'Working'
         run:
